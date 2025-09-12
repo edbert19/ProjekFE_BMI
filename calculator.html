@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator - Hitung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="navbar">
+    <h1>BMI Calculator</h1>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class="wrapper">
+    <!-- FORM CARD -->
+    <div class="form-card">
+      <h2>Masukkan Data</h2>
+
+      <label for="gender">Jenis Kelamin</label>
+      <select id="gender">
+        <option value="male">Laki-laki</option>
+        <option value="female">Perempuan</option>
+      </select>
+
+      <label for="age">Umur (tahun)</label>
+      <input type="number" id="age" placeholder="Masukkan umur">
+
+      <label for="weight">Berat Badan (kg)</label>
+      <input type="number" id="weight" placeholder="Masukkan berat badan">
+
+      <label for="height">Tinggi Badan (cm)</label>
+      <input type="number" id="height" placeholder="Masukkan tinggi badan">
+
+      <button id="calculate">Hitung BMIs</button>
+    </div>
+
+    <!-- RESULT CARD -->
+    <div class="result-card">
+      <h2>Hasil</h2>
+      <p id="bmi-result">BMI: -</p>
+      <p id="bmi-category">Kategori: -</p>
+
+      <!-- indikator bar -->
+      <div class="indicator">
+        <div class="bar underweight">Underweight</div>
+        <div class="bar normal">Normal</div>
+        <div class="bar overweight">Overweight</div>
+        <div class="bar obese">Obesej</div>
+      </div>
+      <div id="pointer"></div>
+    </div>
+  </div>
+
+  <script src="jees.js"></script>
+</body>
+</html>

@@ -35,20 +35,28 @@ body {
 /* ===== WELCOME PAGE ===== */
 .welcome {
   text-align: center;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 30px auto;
+  padding: 20px 15px;
+  max-width: 450px; /* diperkecil dari 600px */
+
+  background: #fff;
+  border-radius: 30px; /* lebih kecil biar gak terlalu bulat */
+  position: relative;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
 }
 
 .welcome h2 {
-  font-size: 26px;
-  margin-bottom: 10px;
+  font-size: 22px; /* diperkecil */
+  margin-bottom: 8px;
   color: #222;
 }
 
 .welcome .subtitle {
-  font-size: 18px;
+  font-size: 16px; /* diperkecil */
   color: #666;
 }
+
+
 
 /* ===== INFO SECTION ===== */
 .info {
@@ -265,6 +273,14 @@ body {
   border: 1px solid #ddd;
 }
 
+.advice ul {
+  margin: 5px 0 0 20px; /* kasih jarak dari teks & padding kiri */
+}
+
+.advice li {
+  margin-bottom: 4px; /* jarak antar poin */
+}
+
 .gender-options {
   display: flex;
   gap: 20px;
@@ -290,7 +306,7 @@ body {
 }
 
 .gender-options input {
-  display: none; /* sembunyikan radio button */
+  display: none; 
 }
 
 .gender-options input:checked + img,

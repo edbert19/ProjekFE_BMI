@@ -19,12 +19,20 @@
       <h2>Masukkan Data</h2>
 
       <label for="gender">Jenis Kelamin</label>
-      <select id="gender">
-        <option value="male">Laki-laki</option>
-        <option value="female">Perempuan</option>
-      </select>
+      <div class="gender-options">
+        <label>
+          <input type="radio" name="gender" value="male">
+          <img src="boy.png" alt="Laki-laki">
+          <span>Laki-laki</span>
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female">
+          <img src="girl.png" alt="Perempuan">
+          <span>Perempuan</span>
+        </label>
+      </div>
 
-      <label for="age">Umur (tahun)</label>
+      <label for="age">Usia (tahun)</label>
       <input type="number" id="age" placeholder="Masukkan umur">
 
       <label for="weight">Berat Badan (kg)</label>
@@ -42,14 +50,19 @@
       <p id="bmi-result">BMI: -</p>
       <p id="bmi-category">Kategori: -</p>
 
+    <div id="pointer"></div>
+
       <!-- indikator bar -->
       <div class="indicator">
         <div class="bar underweight">Underweight</div>
         <div class="bar normal">Normal</div>
         <div class="bar overweight">Overweight</div>
-        <div class="bar obese">Obesej</div>
+        <div class="bar obese">Obese</div>
       </div>
-      <div id="pointer"></div>
+
+      <!-- Tambahan: saran kesehatan -->
+      <p id="bmi-advice" class="advice">Saran: -</p>
+
     </div>
   </div>
 

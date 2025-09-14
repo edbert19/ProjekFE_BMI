@@ -42,9 +42,9 @@ function calculateBMI() {
       <strong>Saran tambahan:</strong>
       <ul>
         <li>Pertahankan pola makan seimbang dengan sayur, buah, protein, dan karbohidrat kompleks.</li>
-        <li>Olahraga minimal 30 menit, 3–5 kali seminggu.</li>
+        <li>Olahraga minimal 30 menit, 3-5 kali seminggu.</li>
         <li>Minum air putih cukup (2 liter per hari).</li>
-        <li>Menjaga pola tidur teratur (7–8 jam per malam).</li>
+        <li>Menjaga pola tidur teratur (7-8 jam per malam).</li>
         <li>Menghindari stres berlebihan karena bisa memengaruhi berat badan.</li>
       </ul>
     `;

@@ -1,4 +1,3 @@
-// tombol hitung BMI
 document.addEventListener("DOMContentLoaded", function() {
   var calculateBtn = document.getElementById("calculate");
   if (calculateBtn) {
@@ -19,7 +18,7 @@ function calculateBMI() {
   if (!weight || !height) {
     alert("Masukkan berat dan tinggi dengan benar!");
     return;
-  }
+  } 
 
   var bmi = weight / (height * height);
   var category = "";
@@ -82,7 +81,6 @@ function calculateBMI() {
   document.getElementById("bmi-advice").innerHTML = advice;
 }
 
-// pindahin pointer di indikator
 function movePointer(position) {
   var indicator = document.querySelector(".indicator");
   var pointer = document.getElementById("pointer");
